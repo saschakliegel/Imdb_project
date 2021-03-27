@@ -1,6 +1,6 @@
 /* body {
     color: #262730;
-    background-color: #778899;
+    background-color: #fefeff;
 }
 .css-1aumxhk {
   background-color: #011839;
@@ -24,6 +24,7 @@
   background-color: #111;
   color: #fff;
 } */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&display=swap');
 /* @import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap'); */
 /* @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); */
@@ -32,16 +33,20 @@
     MAIN APP
 -----------------------
 */
-main {
+.main {
   margin: 0;
   font-family: 'Poppins', sans-serif;
   font-size: 1rem;
-  font-weight: 700;
-  line-height: 1.6;
-  color: #144bd4d2;
-  /* background-image: url("https://media.giphy.com/media/h2U7mw5FtSqDenaGwJ/giphy.gif"); */
+  /* font-size: 4rem; */
+  font-weight: 600;
+  line-height: 2.0;
+  color: #030303;
+  
+  /* background-image: url("https://images.unsplash.com/photo-1518676590629-3dcbd9c5a5c9?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"); */
+  /* background-image: url("https://media1.giphy.com/media/nnJIYvWhYpPlyv3tJo/giphy.gif?cid=ecf05e475dlaiimgpj5rwwd9pfxn4fv9w92iwdnkd8b2w0j8&rid=giphy.gif"); */
+  background-image: url("https://i.pinimg.com/originals/18/d3/7b/18d37b12ebbc2b51b49c6b5776a13924.gif");
   /* background-image: url("https://www.shell.com/energy-and-innovation/the-energy-future/scenarios/shell-scenario-sky/_jcr_content/pagePromo/image.img.960.jpeg/1548184031017/clear-blue-sky.jpeg"); */
-  background-color: #cccccc;
+  background-color: #d12626;
   height: 1200px;
   background-position: center;
   background-repeat: no-repeat;
@@ -64,12 +69,12 @@ main {
 ----------------------
 */
 .stButton > button {
-  background-color: #000000;
+  background-color: #f30b0b;
   border-style:none;
   z-index: 4;
 }
 .stButton > button:hover {
-  background-color: #333333;
+  background-color: #e01a1a;
   color: #ffffff;
 }
 
@@ -105,10 +110,10 @@ main {
 */
 .stTextInput
 {
-  color: #000000;
+  color: #f00e0e;
 }
 .stTextInput > div > div > input {
-  color: #000000;
+  color: #e91111;
 }
 /* 
 -----------------
