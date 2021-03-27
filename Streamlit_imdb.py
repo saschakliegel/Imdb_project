@@ -24,7 +24,7 @@ def load_css(file_name:str)->None:
     """
     with open(file_name) as f:
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
-load_css("style_new.css")
+load_css("styles.css")
 
 
 meta = pd.read_csv('https://raw.githubusercontent.com/saschakliegel/Imdb_project/main/meta.csv',error_bad_lines=False, header = 0)
@@ -61,12 +61,13 @@ def movie_recommender(distance_method, id, N):
 
 # movie_recommender(hamming,choice_id,10)
 
-st.title("Movie Recommender")
+st.title(":popcorn: *Movie Recommender*  :popcorn:")
+st.header(":sunglasses: Choose A Movie  :sunglasses:")
 
 list_of_choices = list(meta_cleaned["original_title"])
 
 list_of_choices.append(" ")
-movie_choice = st.selectbox("Choose a movie",list_of_choices, index=len(list_of_choices)-1)
+movie_choice = st.selectbox(" ",list_of_choices, index=len(list_of_choices)-1)
 
 if movie_choice != " ":
     choice_id = meta_cleaned[meta_cleaned['original_title'] == movie_choice]['id']
