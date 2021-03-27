@@ -17,7 +17,14 @@ from nltk.corpus import wordnet
 # from surprise.model_selection import cross_validate
 import warnings; warnings.simplefilter('ignore')
 
-
+   
+def load_css(file_name:str)->None:
+    """
+    Function to load and render a local stylesheet
+    """
+    with open(file_name) as f:
+        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+load_css("style_new.css")
 
 
 meta = pd.read_csv('https://raw.githubusercontent.com/saschakliegel/Imdb_project/main/meta.csv',error_bad_lines=False, header = 0)
@@ -27,7 +34,7 @@ meta_cleaned = pd.read_csv('https://raw.githubusercontent.com/saschakliegel/Imdb
 def movie_recommender(distance_method, id, N):
     
     df_distance = pd.DataFrame(data=meta['id'])
-    md_ver5 = meta.drop_duplicates(subset="id", keep="first")
+    md_ver5 = meta.drop_duplicates(subset="id", keep="first")   
     md_ver5 = md_ver5.set_index('id')
     df_distance = df_distance[df_distance['id'] != int(id)]
     try:
