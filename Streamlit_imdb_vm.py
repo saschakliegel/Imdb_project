@@ -1,3 +1,4 @@
+import csv
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -20,11 +21,11 @@ import warnings; warnings.simplefilter('ignore')
 
 
 
-meta = pd.read_csv('https://github.com/saschakliegel/Imdb_project/blob/main/meta.csv', header = 0)
-meta_cleaned = pd.read_csv('https://github.com/saschakliegel/Imdb_project/blob/main/meta_cleaned.csv',header = 0)
+meta = pd.read_csv('https://storage.cloud.google.com/movie_recommender/meta.csv' ,error_bad_lines=False, header = 0)
+meta_cleaned = pd.read_csv('https://storage.cloud.google.com/movie_recommender/meta_cleaned.csv',error_bad_lines=False,header = 0)
+meta
 
-
-def movie_recommender(distance_method, id, N):
+# def movie_recommender(distance_method, id, N):
     
     df_distance = pd.DataFrame(data=meta['id'])
     md_ver5 = meta.drop_duplicates(subset="id", keep="first")
@@ -54,20 +55,22 @@ def movie_recommender(distance_method, id, N):
 
 # movie_recommender(hamming,choice_id,10)
 
-st.title("Movie Recommender")
+# st.title("Movie Recommender")
 
-list_of_choices = list(meta_cleaned["original_title"])
+# list_of_choices = list(meta_cleaned["original_title"])
 
-list_of_choices.append(" ")
-movie_choice = st.selectbox("Choose a movie",list_of_choices, index=len(list_of_choices)-1)
+# list_of_choices.append(" ")
+# movie_choice = st.selectbox("Choose a movie",list_of_choices, index=len(list_of_choices)-1)
 
-if movie_choice != " ":
-    choice_id = meta_cleaned[meta_cleaned['original_title'] == movie_choice]['id']
-    result_list = movie_recommender(hamming,choice_id,10)
+# if movie_choice != " ":
+#     choice_id = meta_cleaned[meta_cleaned['original_title'] == movie_choice]['id']
+#     result_list = movie_recommender(hamming,choice_id,10)
 
-    for i in result_list:
-        movie_title = meta_cleaned[meta_cleaned['id'] == str(i)]['original_title'].to_string(index=False)
+#     for i in result_list:
+#         movie_title = meta_cleaned[meta_cleaned['id'] == str(i)]['original_title'].to_string(index=False)
         
-        st.text(movie_title)
+#         st.text(movie_title)
 
-# #st.text(movie_recommender(hamming,choice_id,10))
+#st.text(movie_recommender(hamming,choice_id,10))
+
+
