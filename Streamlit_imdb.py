@@ -61,7 +61,7 @@ def movie_recommender(distance_method, id, N):
 
 # movie_recommender(hamming,choice_id,10)
 
-st.title(":popcorn:Movie Recommender")
+st.title(":popcorn:, :popcorn: popcorn: Movie Recommender")
 
 list_of_choices = list(meta_cleaned["original_title"])
 
