@@ -20,8 +20,8 @@ import warnings; warnings.simplefilter('ignore')
 
 
 
-meta = pd.read_csv('https://github.com/saschakliegel/Imdb_project/blob/main/meta.csv',error_bad_lines=False, header = 0)
-meta_cleaned = pd.read_csv('https://github.com/saschakliegel/Imdb_project/blob/main/meta_cleaned.csv',error_bad_lines=False, header = 0)
+meta = pd.read_csv('https://raw.githubusercontent.com/saschakliegel/Imdb_project/main/meta.csv',error_bad_lines=False, header = 0)
+meta_cleaned = pd.read_csv('https://raw.githubusercontent.com/saschakliegel/Imdb_project/main/meta_cleaned.csv',error_bad_lines=False, header = 0)
 
 
 def movie_recommender(distance_method, id, N):
@@ -70,8 +70,4 @@ if movie_choice != " ":
         
         st.text(movie_title)
 
-<<<<<<< HEAD
-# #st.text(movie_recommender(hamming,choice_id,10))
-=======
 #st.text(movie_recommender(hamming,choice_id,10))
->>>>>>> f5840d5d6a2fe5475f61e59a92f1acb4de4f91c1
