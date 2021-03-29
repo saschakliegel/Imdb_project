@@ -24,7 +24,7 @@ def load_css(file_name:str)->None:
     """
     with open(file_name) as f:
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
-load_css("styles.css")
+load_css("style_1.css")
 
 
 meta = pd.read_csv('https://raw.githubusercontent.com/saschakliegel/Imdb_project/main/meta.csv',error_bad_lines=False, header = 0)
