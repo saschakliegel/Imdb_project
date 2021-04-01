@@ -31,13 +31,13 @@ meta = pd.read_csv('https://raw.githubusercontent.com/saschakliegel/Imdb_project
 meta_cleaned = pd.read_csv('https://raw.githubusercontent.com/saschakliegel/Imdb_project/main/meta_cleaned.csv',error_bad_lines=False, header = 0)
 meta_sally = pd.read_csv('https://raw.githubusercontent.com/saschakliegel/Imdb_project/main/meta_sally.csv',header = 0)
 
-def load_css(file_name:str)->None:           
-     """
-    Function to load and render a local stylesheet
-#     """
-     with open(file_name) as f:
-         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
-load_css("style_1.css")
+# def load_css(file_name:str)->None:           
+#      """
+#     Function to load and render a local stylesheet
+# #     """
+#      with open(file_name) as f:
+#          st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+# load_css("style_1.css")
                  
 
                     
@@ -46,11 +46,11 @@ load_css("style_1.css")
 
 
 
-genres_list = ['None','Animation', 'Comedy', 'Family', 'Adventure', 'Fantasy', 'Romance', 'Drama', 'Action', 'Crime', 'Thriller', 'Horror', 'History', 'Science', 'Fiction', 'Mystery', 'War', 'Foreign', 'Music', 'Documentary', 'Western', 'TV', 'Movie', 'Carousel', 'Productions', 'Vision', 'View', 'Entertainment', 'Telescene', 'Film', 'Group', 'Aniplex', 'GoHands', 'BROSTA', 'Mardock', 'Scramble', 'Production', 'Committee', 'Sentai', 'Filmworks', 'Odyssey', 'Media', 'Pulser', 'Rogue', 'State', 'The', 'Cartel']
+# genres_list = ['None','Animation', 'Comedy', 'Family', 'Adventure', 'Fantasy', 'Romance', 'Drama', 'Action', 'Crime', 'Thriller', 'Horror', 'History', 'Science', 'Fiction', 'Mystery', 'War', 'Foreign', 'Music', 'Documentary', 'Western', 'TV', 'Movie', 'Carousel', 'Productions', 'Vision', 'View', 'Entertainment', 'Telescene', 'Film', 'Group', 'Aniplex', 'GoHands', 'BROSTA', 'Mardock', 'Scramble', 'Production', 'Committee', 'Sentai', 'Filmworks', 'Odyssey', 'Media', 'Pulser', 'Rogue', 'State', 'The', 'Cartel']
 
-meta = pd.read_csv('https://raw.githubusercontent.com/saschakliegel/Imdb_project/main/meta.csv', header = 0)
-meta_cleaned = pd.read_csv('https://raw.githubusercontent.com/saschakliegel/Imdb_project/main/meta_cleaned.csv',header = 0)
-meta_sally = pd.read_csv('https://raw.githubusercontent.com/saschakliegel/Imdb_project/main/meta_sally.csv',header = 0)           
+# meta = pd.read_csv('https://raw.githubusercontent.com/saschakliegel/Imdb_project/main/meta.csv', header = 0)
+# meta_cleaned = pd.read_csv('https://raw.githubusercontent.com/saschakliegel/Imdb_project/main/meta_cleaned.csv',header = 0)
+# meta_sally = pd.read_csv('https://raw.githubusercontent.com/saschakliegel/Imdb_project/main/meta_sally.csv',header = 0)           
 
  
 
@@ -78,7 +78,7 @@ def main():
 
 def Exploratory_Data_Analysis():
         
-    image = ("https://github.com/saschakliegel/Imdb_project/blob/main/logo.png")
+    image = ("https://github.com/saschakliegel/Imdb_project/blob/main/CalebsLogo.jpg")
     st.image(image, width=300)
 
     ### OPENING ---------------------------------------------------
@@ -235,7 +235,7 @@ def Content_based_Filitering():
 # 
 # Sally's code
 # meta = pd.read_csv('meta.csv',index_col=[0])
-rate = pd.read_csv('C:\\Users\\Caleb\\Desktop\\FTDS2\\Projrct 3\\Streamlit\\ratings_small.csv')
+rate = pd.read_csv('https://raw.githubusercontent.com/saschakliegel/Imdb_project/main/ratings_small.csv')
 
 def hybrid_recommendation():
     def contentbased(title):
