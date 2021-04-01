@@ -78,7 +78,7 @@ def main():
 
 def Exploratory_Data_Analysis():
         
-    image = ("C:\\Users\\Caleb\\Desktop\\FTDS2\\Projrct 3\\Streamlit\\Graphs\\logo.png")
+    image = ("https://github.com/saschakliegel/Imdb_project/blob/main/logo.png")
     st.image(image, width=300)
 
     ### OPENING ---------------------------------------------------
@@ -91,7 +91,7 @@ def Exploratory_Data_Analysis():
     st.subheader("Popular Words within Movie Titles")
     st.markdown("The word **Love, Girl, Day, Man** are also among the most commonly occuring words. I think this encapsulates the idea of the ubiquitious presence of romance in movies pretty well.")
 
-    image = ("C:\\Users\\Caleb\\Desktop\\FTDS2\\Projrct 3\\Streamlit\\Graphs\\wordcloud_love.png")
+    image = ("https://github.com/saschakliegel/Imdb_project/blob/main/wordcloud_love.png")
     st.image(image, width=700)
 
     ### GRAPHS -- MOVIES OVER THE YEARS ---------------------------
@@ -99,7 +99,7 @@ def Exploratory_Data_Analysis():
     st.markdown("The Dataset of 45,000 movies available to us does not represent the entire corpus of movies released since the inception of cinema. However, it is reasonable to assume that it does include almost every major film released in Hollywood as well as other major film industries across the world (such as Bollywood in India). With this assumption in mind, let us take a look at the number of movies produced by the year.")
     st.markdown("We notice that there is a **sharp rise in the number of movies starting the 1990s decade.** However, we will not look too much into this as it is entirely possible that recent movies were oversampled for the purposes of this dataset.")
 
-    image = ("C:\\Users\\Caleb\\Desktop\\FTDS2\\Projrct 3\\Streamlit\\Graphs\\moviesovertheyears.png")
+    image = ("https://github.com/saschakliegel/Imdb_project/blob/main/moviesovertheyears.png")
     st.image(image, width=700)
 
     ### GRAPHS -- GENRES ------------------------------------------
@@ -107,42 +107,42 @@ def Exploratory_Data_Analysis():
     st.markdown("TMDB defines 32 different genres for our set of 45,000 movies")
     st.markdown("The proportion of movies of each genre has remained fairly constant since the beginning of this century except for Drama. **The proportion of drama films has fallen by over 5%. Thriller movies have enjoyed a slight increase in their share.**")
 
-    image = ("C:\\Users\\Caleb\\Desktop\\FTDS2\\Projrct 3\\Streamlit\\Graphs\\genre_growth.png")
+    image = ("https://github.com/saschakliegel/Imdb_project/blob/main/genre_growth.png")
     st.image(image, width=700)
 
     ### GRAPHS -- LANGUAGE ----------------------------------------
     st.subheader("Which Languages are most popular, except English ?")
     st.markdown("There are over 93 languages represented in our dataset. **As we had expected, English language films form the overwhelmingly majority. French and Italian movies come at a very distant second and third respectively. Japanese and Hindi form the majority as far as Asian Languages are concerned.** Let us represent the most popular languages (apart from English) in the form of a bar plot.")
 
-    image = ("C:\\Users\\Caleb\\Desktop\\FTDS2\\Projrct 3\\Streamlit\\Graphs\\language.png")
+    image = ("https://github.com/saschakliegel/Imdb_project/blob/main/language.png")
     st.image(image, width=700)
 
     ### GRAPHS -- Movies Released in a Particular Month --------------
     st.subheader("In which months do Hollywood Movies tend to release ?")
     st.markdown("**It appears that January is the most popular month when it comes to movie releases.** In Hollywood circles, this is also known as the the dump month when sub par movies are released by the dozen.")
 
-    image = ("C:\\Users\\Caleb\\Desktop\\FTDS2\\Projrct 3\\Streamlit\\Graphs\\popularmonth.png")
+    image = ("https://github.com/saschakliegel/Imdb_project/blob/main/popularmonth.png")
     st.image(image, width=680)
 
     ### GRAPHS -- Blockbustor Movies Released in a Particular Month ------
     st.subheader("In which months do Blockbuster Movies tend to release ?")
     st.markdown("**It appears that the months of April, May and June** have the highest average gross among high grossing movies. This can be attributed to the fact that blockbuster movies are usually released in the summer when the kids are out of school and the parents are on vacation and therefore, the audience is more likely to spend their disposable income on entertainment.")
 
-    image = ("C:\\Users\\Caleb\\Desktop\\FTDS2\\Projrct 3\\Streamlit\\Graphs\\popularmonth_blockbuster.png")
+    image = ("https://github.com/saschakliegel/Imdb_project/blob/main/popularmonth_blockbuster.png")
     st.image(image, width=700)
 
     ### GRAPHS -- Movies . Returns -----------------------------------------
     st.subheader("Do Some Months Tend to be More Successful than Others ?")
     st.markdown("**The months of June and July tend to yield the highest median returns. September is the least successful months on the aforementioned metrics.** Again, the success of June and July movies can be attributed to them being summer months and times of vacation. September usually denotes the beginning of the school/college semester and hence a slight reduction in the consumption of movies")
 
-    image = ("C:\\Users\\Caleb\\Desktop\\FTDS2\\Projrct 3\\Streamlit\\Graphs\\popularmonth_yield.png")
+    image = ("https://github.com/saschakliegel/Imdb_project/blob/main/popularmonth_yield.png")
     st.image(image, width=700) 
 
     ### GRAPHS -- POPULARTY vs VOTE AVERAGE -------------------------------
     st.subheader("Do Popularity and Vote Average share tangible relationship ?")
     st.markdown("Surprisingly, the Pearson Coefficient of the two aforementioned quantities is a measly 0.097 which suggests that **there is no tangible correlation. In other words, popularity and vote average and independent quantities.** It would be interesting to discover how TMDB assigns numerical popularity scores to its movies.")
 
-    image = ("C:\\Users\\Caleb\\Desktop\\FTDS2\\Projrct 3\\Streamlit\\Graphs\\popularity_voteaverage.png")
+    image = ("https://github.com/saschakliegel/Imdb_project/blob/main/popularity_voteaverage.png")
     st.image(image, width=600)
 
     ### GRAPHS -- PRODUCTION COUNTRIES ------------------------------------
@@ -150,7 +150,7 @@ def Exploratory_Data_Analysis():
     st.markdown("**The Full MovieLens Dataset consists of movies that are overwhelmingly in the English language (more than 31000)**. However, these movies may have shot in various locations around the world. It would be interesting to see which countries serve as the most popular destinations for shooting movies by filmmakers, especially those in the United States of America and the United Kingdom.")
     st.markdown("Unsurprisingly, the United States is the most popular destination of production for movies given that our dataset largely consists of English movies. Europe is also an extremely popular location with the UK, France, Germany and Italy in the top 5. Japan and India are the most popular Asian countries when it comes to movie production.")
 
-    image = ("C:\\Users\\Caleb\\Desktop\\FTDS2\\Projrct 3\\Streamlit\\Graphs\\production_countries.png")
+    image = ("https://github.com/saschakliegel/Imdb_project/blob/main/production_countries.png")
     st.image(image, width = 700)
 
     # ### GRAPHS -- DIRECTORS ------------------------------------------------
@@ -196,7 +196,7 @@ def Content_based_Filitering():
     # movie_recommender(hamming,choice_id,10)
 
     st.title(":popcorn:Movie Recommender:popcorn:")   
-    meta_cleaned = pd.read_csv('C:\\Users\\Caleb\\Desktop\\FTDS2\\Projrct 3\\meta_cleaned.csv',header = 0)
+    meta_cleaned = pd.read_csv('https://raw.githubusercontent.com/saschakliegel/Imdb_project/main/meta_cleaned.csv',error_bad_lines=False, header = 0)
     list_of_choices = list(meta_cleaned["original_title"])
 
     list_of_choices.append(" ")
